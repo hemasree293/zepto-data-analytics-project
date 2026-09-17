@@ -142,7 +142,9 @@ data_pipeline/
 
 This module completes the data pipeline from scraping and cleaning through currency conversion, SQLite storage, SQL querying, and pandas validation.
 The project uses the fixed baseline conversion rate:
+## Database Design
 
+The database uses two normalized tables: `categories` and `books`. The `books.category_id` column is a foreign key referencing `categories.category_id`.
 **1 GBP = 105.50 INR**
 
 This is an artificial, project-defined rate used consistently for this assignment. No live currency API is used.
