@@ -144,3 +144,11 @@ The project uses the fixed baseline conversion rate:
 **1 GBP = 105.50 INR**
 
 This is an artificial, project-defined rate used consistently for this assignment. No live currency API is used.
+## Module 1 Design Decisions
+
+- **Scraping:** `requests` and `BeautifulSoup` are used to collect catalog data from the specified book categories.
+- **Cleaning:** Price, rating, and availability fields are converted into consistent numeric/Boolean representations.
+- **Currency conversion:** A fixed project-defined rate of `1 GBP = 105.50 INR` is used so results are deterministic and reproducible.
+- **Database:** SQLite is used because it is lightweight, local, and requires no external database server.
+- **Normalization:** Categories and books are stored in separate tables using a primary-key/foreign-key relationship.
+- **Validation:** The SQL JOIN result is reproduced with `pandas.merge()` and compared for equivalence.
