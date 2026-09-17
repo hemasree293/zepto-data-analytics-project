@@ -137,3 +137,10 @@ data_pipeline/
 ## Note about the included CSV
 
 `data/books_cleaned.csv` is included as the cleaned dataset used to validate the database/query artifacts in this submission. The authoritative reproduction path is `run_pipeline.py`, which performs the live scrape from Books to Scrape and rebuilds all downstream outputs from scratch.
+## Currency Conversion
+
+The project uses the fixed baseline conversion rate:
+
+**1 GBP = 105.50 INR**
+
+This is an artificial, project-defined rate used consistently for this assignment. No live currency API is used.
