@@ -1,0 +1,150 @@
+
+================================================================================
+Q1_SELECT_WHERE
+================================================================================
+                                                                   title  price_gbp  rating
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)      52.30       5
+                                  A Time of Torment (Charlie Parker #14)      48.35       5
+                                         Deep Under (Walker Security #1)      47.09       5
+                                        Psycho: Sanitarium (Psycho #1.5)      36.97       5
+                                                     Dracula the Un-Dead      35.63       5
+                                                              Black Dust      34.53       5
+       What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37       5
+                                              Chase Me (Paris Nights #2)      25.27       5
+                                       The Silkworm (Cormoran Strike #2)      23.05       5
+                        A Gentleman's Position (Society of Gentlemen #3)      14.75       5
+                                                       The Girl You Lost      12.29       5
+  The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4
+                                                     The Past Never Ends      56.50       4
+                   Murder at the 42nd Street Library (Raymond Ambler #1)      54.36       4
+                                                            'Salem's Lot      49.56       4
+                                                           Sharp Objects      47.82       4
+                                                          Needful Things      47.51       4
+                         The Murder of Roger Ackroyd (Hercule Poirot #4)      44.10       4
+                                                     Dirty (Dive Bar #1)      40.83       4
+                                           Bounty (Colorado Mountain #7)      37.26       4
+                                                       Imperfect Harmony      34.74       4
+                     The Mysterious Affair at Styles (Hercule Poirot #1)      24.80       4
+                        Delivering the Truth (Quaker Midwife Mystery #1)      20.89       4
+                                                Something More Than This      16.24       4
+                                      First and First (Five Boroughs #3)      15.97       4
+                                         Night Shift (Night Shift #1-20)      12.75       4
+
+================================================================================
+Q2_ORDER_BY_LIMIT
+================================================================================
+                                                                 title  price_gbp  price_inr
+                                    The Perfect Play (Play by Play #1)      59.99   6328.945
+                                         Boar Island (Anna Pigeon #19)      59.48   6275.140
+                                              Listen to Me (Fusion #1)      58.99   6223.445
+                                                             The Stand      57.86   6104.230
+The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70   6087.350
+                                                   The Past Never Ends      56.50   5960.750
+                                                    A Walk to Remember      56.43   5953.365
+                                      Suddenly in Love (Lake Haven #1)      55.99   5906.945
+                                                       House of Leaves      54.89   5790.895
+                 Murder at the 42nd Street Library (Raymond Ambler #1)      54.36   5734.980
+
+================================================================================
+Q3_DISTINCT
+================================================================================
+category_name
+       Horror
+      Mystery
+      Romance
+
+================================================================================
+Q4_IN
+================================================================================
+                                                                   title  rating  category_id
+                        A Gentleman's Position (Society of Gentlemen #3)       5            3
+                                  A Time of Torment (Charlie Parker #14)       5            2
+                                                              Black Dust       5            3
+                                              Chase Me (Paris Nights #2)       5            3
+                                         Deep Under (Walker Security #1)       5            3
+                                                     Dracula the Un-Dead       5            1
+                                        Psycho: Sanitarium (Psycho #1.5)       5            1
+The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)       5            2
+                                                       The Girl You Lost       5            2
+                                       The Silkworm (Cormoran Strike #2)       5            2
+       What Happened on Beale Street (Secrets of the South Mysteries #2)       5            2
+                                                            'Salem's Lot       4            1
+                                           Bounty (Colorado Mountain #7)       4            3
+                        Delivering the Truth (Quaker Midwife Mystery #1)       4            2
+                                                     Dirty (Dive Bar #1)       4            3
+
+================================================================================
+Q5_BETWEEN
+================================================================================
+                                                            title  price_gbp
+                             Blood Defense (Samantha Brinkman #1)      20.30
+                 Delivering the Truth (Quaker Midwife Mystery #1)      20.89
+                                                  Sit, Stay, Love      20.90
+                                                  Follow You Home      21.36
+                            Fifty Shades Darker (Fifty Shades #2)      21.96
+                                The Silkworm (Cormoran Strike #2)      23.05
+                                  Red Dragon (Hannibal Lecter #1)      23.37
+                                                        The Loney      23.40
+                                                The Wedding Dress      24.12
+                              Career of Evil (Cormoran Strike #3)      24.72
+              The Mysterious Affair at Styles (Hercule Poirot #1)      24.80
+                                                               It      25.01
+                                       Chase Me (Paris Nights #2)      25.27
+What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37
+                               Extreme Prey (Lucas Davenport #26)      25.40
+                                 Poisonous (Max Revere Novels #3)      26.80
+                                                        The Widow      27.26
+                                Best of My Love (Fool's Gold #20)      27.41
+                                         Rhythm, Chord & Malykhin      28.34
+                          Hold Your Breath (Search and Rescue #1)      28.82
+                  A Girl's Guide to Moving On (New Beginnings #2)      31.30
+                              The Wedding Pact (The O'Malleys #2)      32.61
+                    Her Backup Boyfriend (The Sorensen Family #1)      33.97
+                                                       Black Dust      34.53
+                                                Imperfect Harmony      34.74
+                                                           Misery      34.79
+                                                      Most Wanted      35.28
+                                Doing It Over (Most Likely To #1)      35.61
+                                              Dracula the Un-Dead      35.63
+                                 Psycho: Sanitarium (Psycho #1.5)      36.97
+                                    Bounty (Colorado Mountain #7)      37.26
+                            In the Woods (Dublin Murder Squad #1)      38.38
+                             My Perfect Mistake (Over the Top #1)      38.92
+                                      Fighting Fate (Fighting #6)      39.24
+                                                         Security      39.25
+                      Where Lightning Strikes (Bleeding Stars #3)      39.77
+
+================================================================================
+Q6_JOIN_TOP_RATED_PER_CATEGORY
+================================================================================
+category_name                                                                    title  price_gbp  rating  in_stock
+       Horror                                         Psycho: Sanitarium (Psycho #1.5)      36.97       5         1
+       Horror                                                      Dracula the Un-Dead      35.63       5         1
+       Horror                                                             'Salem's Lot      49.56       4         1
+       Horror                                                           Needful Things      47.51       4         1
+       Horror                                          Night Shift (Night Shift #1-20)      12.75       4         1
+       Horror                                              The Girl with All the Gifts      49.47       3         1
+       Horror                                                                       It      25.01       3         1
+       Horror                                          Red Dragon (Hannibal Lecter #1)      23.37       3         1
+       Horror                                                             Pet Sematary      10.56       3         1
+       Horror                                                                The Stand      57.86       2         1
+      Mystery The Bachelor Girl's Guide to Murder (Herringford and Watts Mysteries #1)      52.30       5         1
+      Mystery                                   A Time of Torment (Charlie Parker #14)      48.35       5         1
+      Mystery        What Happened on Beale Street (Secrets of the South Mysteries #2)      25.37       5         1
+      Mystery                                        The Silkworm (Cormoran Strike #2)      23.05       5         1
+      Mystery                                                        The Girl You Lost      12.29       5         1
+      Mystery   The No. 1 Ladies' Detective Agency (No. 1 Ladies' Detective Agency #1)      57.70       4         1
+      Mystery                                                      The Past Never Ends      56.50       4         1
+      Mystery                    Murder at the 42nd Street Library (Raymond Ambler #1)      54.36       4         1
+      Mystery                                                            Sharp Objects      47.82       4         1
+      Mystery                          The Murder of Roger Ackroyd (Hercule Poirot #4)      44.10       4         1
+      Romance                                          Deep Under (Walker Security #1)      47.09       5         1
+      Romance                                                               Black Dust      34.53       5         1
+      Romance                                               Chase Me (Paris Nights #2)      25.27       5         1
+      Romance                         A Gentleman's Position (Society of Gentlemen #3)      14.75       5         1
+      Romance                                                      Dirty (Dive Bar #1)      40.83       4         1
+      Romance                                            Bounty (Colorado Mountain #7)      37.26       4         1
+      Romance                                                        Imperfect Harmony      34.74       4         1
+      Romance                                                 Something More Than This      16.24       4         1
+      Romance                                       First and First (Five Boroughs #3)      15.97       4         1
+      Romance                                       The Perfect Play (Play by Play #1)      59.99       3         1

@@ -1,0 +1,1 @@
+pd.read_sql JOIN result equals pd.merge result: True

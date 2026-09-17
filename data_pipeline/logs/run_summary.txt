@@ -1,0 +1,6 @@
+Scraped/validated rows: 84
+Categories: 3
+Cleaned rows: 84
+Fixed GBP->INR rate: 105.50
+JOIN SQL vs pandas.merge equivalent: True
+SQLite database: /mnt/data/data_pipeline/database/books.db
